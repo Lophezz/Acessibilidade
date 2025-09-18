@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Acessibilidade</title>
+</head>
+<body>
+    <button id="libras"><img src="/img/ico-libras.png" class=icone title="Ferramenta Libras"/></button>
+    <button id="aumentar-texto"><img src="/img/ico-amais.png" class=icone title="Aumentar Texto"/></button>
+    <button id="diminuir-texto"><img src="/img/ico-amenos.png" class=icone title="Diminuir Texto"/></button>
+    <button id="alterar-contraste"><img src="/img/ico-altocontraste.png" class=icone title="Alterar Contraste"/></button>
+    <button id="preto-e-branco"><img src="/img/ico-pretobranco.png" class=icone title="Preto e Branco"/></button>
+    <button id="comando-de-voz"><img src="/img/ico-voz.png" class=icone title="Comando de Voz"/></button>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <h1>Ferramentas de Acessibilidade</h1>
+
+    <a href="https://vlibras.gov.br/" target="_blank">
+        <h4>VLibras - Tradução para Libras</h4>
+    </a>
+
+    <img src="/img/globo.png" class="globo">
+
+</body>
+<script src="script.js"></script>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+</html>

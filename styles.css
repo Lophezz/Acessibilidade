@@ -1,0 +1,49 @@
+.preto-e-branco {
+    filter: grayscale(100%);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.alto-contraste 
+{
+    background-color: black;
+    color: white;
+}
+
+.alto-contraste a
+{
+    color: yellow;
+}
+
+.icone {
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+}
+
+.icone:hover {
+    filter: none;
+    cursor: pointer;
+}
+
+.globo {
+    height: 30rem;
+    width: 30rem;
+    vertical-align: middle;
+    margin-left: 10px;
+}
